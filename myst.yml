@@ -8,6 +8,7 @@ project:
   exclude:
     - README.md
     - SCREENSHOTS.md
+    - TEST-REPORT.md
     - _snippets/**
   toc:
     - file: index.md
