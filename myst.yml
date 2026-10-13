@@ -1,0 +1,46 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 31170dc4-d221-4515-bd45-065007f37e7b
+  title: MIS 58710 Setup Guide
+  description: Set up your computer for MIS 58710 DevOps and Technology Solutions.
+  github: https://github.com/mis-devops-purdue/setup-guide
+  exclude:
+    - README.md
+    - SCREENSHOTS.md
+    - _snippets/**
+  toc:
+    - file: index.md
+    - file: why-linux.md
+    - file: choose-your-path.md
+    - title: "Part 1: Windows (WSL)"
+      children:
+        - file: windows/before-you-start.md
+        - file: windows/01-install-wsl.md
+        - file: windows/02-git-and-github.md
+        - file: windows/03-python-and-poetry.md
+        - file: windows/04-vs-code.md
+        - file: windows/05-gcloud.md
+    - title: "Part 2: Mac"
+      children:
+        - file: mac/before-you-start.md
+        - file: mac/01-homebrew.md
+        - file: mac/02-git-and-github.md
+        - file: mac/03-python-and-poetry.md
+        - file: mac/04-vs-code.md
+        - file: mac/05-gcloud.md
+    - title: "Part 3: GCP Cloud Shell"
+      children:
+        - file: cloud-shell/before-you-start.md
+        - file: cloud-shell/01-open-cloud-shell.md
+        - file: cloud-shell/02-git-and-github.md
+        - file: cloud-shell/03-python-and-poetry.md
+        - file: cloud-shell/04-editor.md
+        - file: cloud-shell/05-gcloud.md
+    - file: verify.md
+    - file: stop-here.md
+    - file: troubleshooting.md
+site:
+  template: book-theme
+  options:
+    folders: true
