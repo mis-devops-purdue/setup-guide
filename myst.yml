@@ -9,6 +9,7 @@ project:
     - README.md
     - SCREENSHOTS.md
     - TEST-REPORT.md
+    - _parts/**
     - _snippets/**
   toc:
     - file: index.md
@@ -41,7 +42,16 @@ project:
     - file: verify.md
     - file: stop-here.md
     - file: troubleshooting.md
+    - title: Undo your setup
+      children:
+        - file: uninstall/index.md
+        - file: uninstall/windows.md
+        - file: uninstall/mac.md
+        - file: uninstall/cloud-shell.md
 site:
   template: book-theme
+  parts:
+    primary_sidebar_footer: _parts/sidebar-footer.md
   options:
     folders: true
+    logo_text: MIS 58710 Setup Guide

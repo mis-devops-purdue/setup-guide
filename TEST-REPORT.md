@@ -48,8 +48,29 @@ To see a full PASS on this Mac, follow Part 2 pages 3–4. This changes Rob's Po
    - Poetry's official installer and `poetry self add poetry-plugin-export`
    - whether the Python extension appears in the Editor's Installed list
    - the real `verify.sh` run
-7. **Screenshots**: all 15 placeholders in `SCREENSHOTS.md`.
-8. **Placeholders**: `{{BRIGHTSPACE_HELP_LINK}}` and `{{GCP_ACCOUNT_INSTRUCTIONS_URL}}` appear as literal text on the live site until replaced (see README).
+7. **Screenshots**: all 17 placeholders in `SCREENSHOTS.md`.
+8. **Placeholder**: `{{GCP_ACCOUNT_INSTRUCTIONS_URL}}` appears as literal text on the live site until replaced (see README).
+
+## Uninstall section
+
+Added after Troubleshooting: `uninstall/` (4 pages).
+
+| Area | Tested where | Result |
+| --- | --- | --- |
+| Pages build and cross-references | Strict build with `--check-links` (28 pages) | ✅ 0 errors, 0 warnings |
+| Command syntax | Every `bash` block parsed with `bash -n` (41 blocks) | ✅ No syntax errors |
+| Running the commands | **Not run anywhere.** They would remove tools from Rob's Mac. | ⏳ Manual |
+
+Commands come from official docs where docs exist:
+- **Cloud Shell reset:** Google's "Resetting Cloud Shell" page (`sudo rm -rf $HOME`, then **More → Restart**).
+- **Homebrew uninstaller:** Homebrew's install repo.
+- **`wsl --unregister`:** Microsoft's WSL basic-commands page.
+- **gcloud:** Google's uninstall page says only to use the OS package manager for apt installs. The apt source and key paths in the guide mirror the setup steps.
+
+Still needs a manual check:
+- **Option A on a WSL machine and on a Mac**, ideally right after a fresh setup, then confirm `verify.sh` reports the tools as missing.
+- **The Windows Settings route for uninstalling WSL** (B2). It isn't covered by Microsoft's command docs.
+- **Cloud Shell reset**: confirm the **More → Restart** menu wording, and that the home folder is back to defaults.
 
 ## Notes
 

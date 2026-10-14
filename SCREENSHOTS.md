@@ -19,5 +19,7 @@ Each placeholder below is an HTML comment in the page source (`<!-- SCREENSHOT: 
 | 13 | `cloud-shell/05-gcloud.md` | 24 | Cloud Shell "Authorize Cloud Shell" pop-up | ☐ |
 | 14 | `_snippets/gh-auth-login.md` | 13 | GitHub device activation page asking for the one-time code | ☐ |
 | 15 | `verify.md` | 56 | verify.sh summary box showing all checks passed | ☐ |
+| 16 | `uninstall/windows.md` | 148 | Windows Settings > Installed apps showing Windows Subsystem for Linux with the Uninstall menu | ☐ |
+| 17 | `uninstall/cloud-shell.md` | 33 | Cloud Shell toolbar "More" menu with Restart highlighted | ☐ |
 
 `_snippets/gh-auth-login.md` is included on all three platforms' Git and GitHub pages, so one screenshot covers all three.

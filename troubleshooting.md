@@ -2,7 +2,7 @@
 title: Troubleshooting
 ---
 
-Find your problem below. If nothing here fixes it, post on Brightspace ({{BRIGHTSPACE_HELP_LINK}}) with your part (Windows, Mac, or Cloud Shell), the step, the command, and the full error message.
+Find your problem below. If nothing here fixes it, contact the instructor or TA with your part (Windows, Mac, or Cloud Shell), the step, the command, and the full error message.
 
 ## All platforms
 
@@ -47,8 +47,8 @@ gh auth login --hostname github.com --git-protocol https --web
 ### Python is older than 3.11
 
 - **Mac:** run `brew install python`, then close and reopen Terminal. `which python3` should point to `/opt/homebrew/bin/python3` (Apple Silicon) or `/usr/local/bin/python3` (Intel), not `/usr/bin/python3`.
-- **Windows (WSL):** your Ubuntu is an old release. In PowerShell, run `wsl -l -v` to see it, and ask on Brightspace before changing anything. Upgrading Ubuntu is possible but takes care.
-- **Cloud Shell:** this shouldn't happen. Post on Brightspace.
+- **Windows (WSL):** your Ubuntu is an old release. In PowerShell, run `wsl -l -v` to see it, and contact the instructor or TA before changing anything. Upgrading Ubuntu is possible but takes care.
+- **Cloud Shell:** this shouldn't happen. Contact the instructor or TA.
 
 ### `poetry export` says the command doesn't exist
 
@@ -172,7 +172,7 @@ Your `virtualenvs.in-project` setting is kept.
 
 ### Cloud Shell says I've used my weekly quota
 
-The weekly quota is 50 hours by default. Until it resets, work locally if you can, and post on Brightspace if a deadline is at risk.
+The weekly quota is 50 hours by default. Until it resets, work locally if you can, and contact the instructor or TA if a deadline is at risk.
 
 ### My session keeps disconnecting
 

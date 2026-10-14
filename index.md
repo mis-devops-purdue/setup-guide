@@ -38,9 +38,9 @@ Hover over any code block and click the copy button in its top-right corner. Pas
 
 ## Getting help
 
-If you get stuck, check [](troubleshooting.md) first. If that doesn't help, post on Brightspace: {{BRIGHTSPACE_HELP_LINK}}
+If you get stuck, check [](troubleshooting.md) first. If that doesn't help, contact the instructor or TA.
 
-Include in your post:
+Include in your message:
 
 - which part you're following (Windows, Mac, or Cloud Shell)
 - the step you're on

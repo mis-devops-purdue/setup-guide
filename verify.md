@@ -72,6 +72,6 @@ Make sure the screenshot shows your platform, the date and time, your GitHub use
 | ❌ `code` not found or extensions missing | Repeat page 4 of your part. On Windows, run the extension installs from **Ubuntu**, not PowerShell. |
 | ⚠️ current folder is under `/mnt/c` | Run `cd ~` and run the script again. Keep your projects under `~/projects`. |
 | ❌ no active `gcloud` account | Run `gcloud auth login` (page 5 of your part). |
-| Something else | See [](troubleshooting.md), then ask on Brightspace ({{BRIGHTSPACE_HELP_LINK}}). Include a screenshot of the full script output. |
+| Something else | See [](troubleshooting.md), then contact the instructor or TA. Include a screenshot of the full script output. |
 
 When the summary shows 0 failed, go to [](stop-here.md).

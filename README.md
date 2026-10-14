@@ -16,6 +16,8 @@ Students complete it in Week 1 as **Prep 2 – Setup**. The guide is reusable ac
 | `verify.md` | Runs [`verify-setup`](https://github.com/mis-devops-purdue/verify-setup); the last page before STOP HERE |
 | `stop-here.md` | End of Week 1 setup |
 | `troubleshooting.md` | Common problems, with MyST labels the other pages link to |
+| `uninstall/` | "Undo your setup": a shared page (save work, sign out), Windows and Mac pages (A: course tools only, B: everything), and a Cloud Shell reset page |
+| `_parts/sidebar-footer.md` | Replaces "Made with MyST" at the bottom of the sidebar. The navbar text is set by `site.options.logo_text` in `myst.yml`. |
 | `_snippets/` | Text shared by all three parts (Git config, `gh auth login`, SSH sidebar, Poetry config, and so on), pulled in with `{include}`. Excluded from the TOC. |
 | `SCREENSHOTS.md` | Every screenshot placeholder, with page and line |
 | `.github/workflows/deploy.yml` | Builds the book and deploys it to GitHub Pages |
@@ -26,7 +28,6 @@ These instructor-specific values appear as literal `{{NAME}}` text in the pages.
 
 | Placeholder | Used in | Replace with |
 | --- | --- | --- |
-| `{{BRIGHTSPACE_HELP_LINK}}` | `index.md`, `verify.md`, `troubleshooting.md` | A link to the Brightspace discussion forum (or page) where students ask for setup help |
 | `{{GCP_ACCOUNT_INSTRUCTIONS_URL}}` | `windows/05-gcloud.md`, `mac/05-gcloud.md`, `cloud-shell/before-you-start.md` | A link to instructions on which Google account students should use for Google Cloud |
 
 Screenshot placeholders are HTML comments (`<!-- SCREENSHOT: … -->`) and are listed in [`SCREENSHOTS.md`](SCREENSHOTS.md).
@@ -56,4 +57,4 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site 
 
 ## Later chapters (Phase 2)
 
-The `later/` chapters (Claude Code, GCP project and BigQuery, GitLab, Postman/Bruno) aren't written yet. They'll be added to the TOC **after** `stop-here.md` so that nothing before STOP HERE covers them.
+The `later/` chapters (Claude Code, GCP project and BigQuery, GitLab, Postman/Bruno) aren't written yet. They'll be added to the TOC **after** `stop-here.md` so that nothing before STOP HERE covers them. When they're added, the uninstall pages need matching removal steps.
